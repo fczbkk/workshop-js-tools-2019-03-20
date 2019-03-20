@@ -17,6 +17,8 @@
     "@babel/core": "^7.4.0",
     "@babel/preset-env": "^7.4.1",
     "babel-loader": "^8.0.5",
+    "conventional-changelog-angular": "^5.0.3",
+    "conventional-changelog-cli": "^2.0.12",
     "documentation": "^9.3.1",
     "jsdoc": "^3.5.5",
     "mkdirp": "^0.5.1",
