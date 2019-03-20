@@ -18,6 +18,7 @@
     "@babel/preset-env": "^7.4.1",
     "babel-loader": "^8.0.5",
     "documentation": "^9.3.1",
+    "jsdoc": "^3.5.5",
     "mkdirp": "^0.5.1",
     "rimraf": "^2.6.3",
     "webpack": "^4.29.6",
@@ -27,6 +28,7 @@
     "cleanup": "rimraf ./build && mkdirp ./build",
     "prebuild": "npm run cleanup",
     "build": "webpack --config ./configs/webpack.config.js",
-    "doc:readme": "documentation readme ./src/index.js -s 'Documentation'"
+    "doc:readme": "documentation readme ./src/index.js -s 'Documentation'",
+    "doc": "jsdoc -c ./configs/jsdoc.config.json"
   }
 }

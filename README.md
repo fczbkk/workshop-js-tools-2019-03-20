@@ -15,7 +15,7 @@ Just a simple calculator. Nothing special.
 
 ### add
 
-Adds two numbers.
+Adds two numbers. Or strings, but don't use it.
 
 #### Parameters
 

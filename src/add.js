@@ -1,5 +1,5 @@
 /**
- * Adds two numbers.
+ * Adds two numbers. Or strings, but don't use it.
  * @param {number} a
  * @param {number} b
  * @return {number}
