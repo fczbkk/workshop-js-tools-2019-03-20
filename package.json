@@ -15,9 +15,13 @@
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.4.0",
-    "@babel/preset-env": "^7.4.1"
+    "@babel/preset-env": "^7.4.1",
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.6.3"
   },
   "scripts": {
-    "transpile": "babel ./src --out-dir ./build --config-file ./configs/babel.config.js"
+    "cleanup": "rimraf ./build && mkdirp ./build",
+    "prebuild": "npm run cleanup",
+    "build": "babel ./src --out-dir ./build --config-file ./configs/babel.config.js"
   }
 }
