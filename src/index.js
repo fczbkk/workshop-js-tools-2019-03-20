@@ -1,10 +1,5 @@
-class Calculator {
+import {add} from './add.js'
 
-  constructor () {
-  }
-
-  add (a, b) {
-    return a + b
-  }
-
+export const Calculator = {
+  add
 }
