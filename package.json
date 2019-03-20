@@ -1,0 +1,15 @@
+{
+  "name": "@fczbkk/calculator",
+  "version": "1.0.0",
+  "description": "Yet another calculator for workshop",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fczbkk/workshop-js-tools-2019-03-20.git"
+  },
+  "author": "Riki Fridrich <riki@fczbkk.com> (https://github.com/fczbkk)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fczbkk/workshop-js-tools-2019-03-20/issues"
+  },
+  "homepage": "https://github.com/fczbkk/workshop-js-tools-2019-03-20#readme"
+}
