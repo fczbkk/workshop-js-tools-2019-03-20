@@ -106,8 +106,45 @@ return /******/ (function(modules) { // webpackBootstrap
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "add", function() { return add; });
+/**
+ * Adds two numbers. Or strings, but don't use it.
+ * @param {number} a
+ * @param {number} b
+ * @return {number}
+ */
 function add(a, b) {
+  if (typeof a !== 'number' || typeof b !== 'number') {
+    throw new Error('Numbers, motherfucker!');
+  }
+
   return a + b;
+}
+
+/***/ }),
+
+/***/ "./src/divide.js":
+/*!***********************!*\
+  !*** ./src/divide.js ***!
+  \***********************/
+/*! exports provided: divide */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "divide", function() { return divide; });
+/**
+ * Divides numbers, except when `b` is zero.
+ * @param {number} a
+ * @param {number} b - Never zero!
+ * @return {number}
+ * @throws {motherfucker}
+ */
+function divide(a, b) {
+  if (b === 0 || b === -0) {
+    throw new Error('Division by zero, motherfucker!');
+  }
+
+  return a / b;
 }
 
 /***/ }),
@@ -123,9 +160,12 @@ function add(a, b) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Calculator", function() { return Calculator; });
 /* harmony import */ var _add_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./add.js */ "./src/add.js");
+/* harmony import */ var _divide__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./divide */ "./src/divide.js");
+
 
 const Calculator = {
-  add: _add_js__WEBPACK_IMPORTED_MODULE_0__["add"]
+  add: _add_js__WEBPACK_IMPORTED_MODULE_0__["add"],
+  divide: _divide__WEBPACK_IMPORTED_MODULE_1__["divide"]
 };
 
 /***/ })
