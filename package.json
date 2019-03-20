@@ -31,6 +31,10 @@
     "prebuild": "npm run cleanup",
     "build": "webpack --config ./configs/webpack.config.js",
     "doc:readme": "documentation readme ./src/index.js -s 'Documentation'",
-    "doc": "jsdoc -c ./configs/jsdoc.config.json"
+    "doc": "jsdoc -c ./configs/jsdoc.config.json",
+
+    "version": "npm run build && npm run changelog && npm run doc && git add -A",
+    "postversion": "git push && git push --tags"
+
   }
 }
